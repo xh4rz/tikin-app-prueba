@@ -1,4 +1,4 @@
-import { IoIosArrowForward } from 'react-icons/io';
+import { ChevronRight } from 'lucide-react';
 import { PiWarningOctagonBold } from 'react-icons/pi';
 
 export const CardNotification = () => {
@@ -13,7 +13,7 @@ export const CardNotification = () => {
 				</p>
 			</div>
 			<div className="flex items-center justify-center">
-				<IoIosArrowForward className="h-5 w-5 " />
+				<ChevronRight className="h-5 w-5 " />
 			</div>
 		</div>
 	);

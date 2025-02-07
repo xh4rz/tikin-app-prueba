@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import { HiMiniHome } from 'react-icons/hi2';
 import { BiSolidContact } from 'react-icons/bi';
 import { FaMoneyBillTransfer } from 'react-icons/fa6';
-
+import { CardNotification, NavUser } from '.';
 import {
 	Sidebar,
 	SidebarContent,
@@ -13,7 +14,6 @@ import {
 	SidebarMenuButton,
 	SidebarMenuItem
 } from '@/components/ui/sidebar';
-import { CardNotification } from './CardNotification';
 
 // Menu items.
 const items = [
@@ -39,7 +39,15 @@ export function AppSidebar() {
 		<Sidebar>
 			<SidebarContent>
 				<SidebarGroup>
-					<SidebarGroupLabel>Logo</SidebarGroupLabel>
+					<SidebarGroupLabel className="my-5">
+						<Image
+							src="/img/logo.png"
+							width={100}
+							height={80}
+							alt="logo tikin"
+							priority
+						/>
+					</SidebarGroupLabel>
 					<SidebarGroupContent>
 						<SidebarMenu>
 							{items.map((item) => (
@@ -59,9 +67,8 @@ export function AppSidebar() {
 
 			<SidebarFooter>
 				<CardNotification />
+				<NavUser />
 			</SidebarFooter>
-
-			{/* <CustomAlert /> */}
 		</Sidebar>
 	);
 }
