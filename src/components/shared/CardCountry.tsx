@@ -13,7 +13,7 @@ export const CardCountry = ({
 	i: { description, countryIcon, moneyAvailable, acronym }
 }: Props) => {
 	return (
-		<div className="bg-[#F6F6F6] w-[200px] h-[200px] rounded-xl p-4 flex flex-col">
+		<div className="bg-[#F6F6F6] w-[230px] h-[200px] rounded-xl p-4 flex flex-col">
 			<div className="flex flex-1 justify-between">
 				<Avatar className="h-16 w-16 border-[3px] border-[#D9D9D9]">
 					<AvatarImage src={countryIcon} />

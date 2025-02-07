@@ -1,4 +1,4 @@
-import { CardCountry } from '@/components/shared';
+import { CardCountry, TransactionInfo } from '@/components/shared';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 
@@ -30,7 +30,7 @@ export default function Home() {
 	return (
 		<div className="flex flex-col gap-5">
 			<div>
-				<h6 className="text-xs mb-2">BALANCE TOTAL</h6>
+				<h6 className="text-xs mb-2 font-bold">BALANCE TOTAL</h6>
 				<span className="text-3xl text-muted-foreground">$</span>
 				<span className="font-[500] text-3xl">10.120.000,</span>
 				<span className="font-[500] text-[16px]">75</span>
@@ -50,6 +50,10 @@ export default function Home() {
 				{optionsCard.map((i) => (
 					<CardCountry key={i.id} i={i} />
 				))}
+			</div>
+
+			<div>
+				<TransactionInfo />
 			</div>
 		</div>
 	);
