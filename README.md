@@ -2,7 +2,7 @@
 
 Prueba Maquetación shadcn - tailwind CSS.
 
-https://jsonplaceholder-app-two.vercel.app/
+https://tikin-app-prueba.vercel.app/
 
 ## Instalación
 
